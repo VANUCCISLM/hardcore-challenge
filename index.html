@@ -2,82 +2,161 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>🔥 Hardcore Game-Challenge 🔥</title>
+  <title>🔥 Hardcore-50/50-Challenge 🔥</title>
   <style>
     body {
       background: #111;
       color: #eee;
       font-family: 'Segoe UI', sans-serif;
-      max-width: 800px;
+      max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
+      line-height: 1.6;
     }
+
     h1 {
       color: #f33;
       text-align: center;
+      margin-bottom: 2rem;
     }
+
     .game {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       border: 2px solid #f33;
       border-radius: 12px;
       padding: 1rem;
       margin-bottom: 1.5rem;
       background-color: #222;
     }
+
+    .content {
+      flex-grow: 1;
+    }
+
     .game h2 {
-      margin-top: 0;
+      margin: 0 0 0.5rem 0;
       color: #ff5555;
     }
+
     .extra {
       color: #f90;
       font-style: italic;
     }
+
+    .checkbox {
+      margin-left: 1rem;
+      transform: scale(1.5);
+    }
+
+    .rules, .coin {
+      background-color: #222;
+      border: 2px dashed #555;
+      border-radius: 12px;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    .rules h3, .coin h3 {
+      color: #0af;
+    }
+
+    .highlight {
+      color: #ff0;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <h1>🔥💣HARDCORE GAME-CHALLENGE💣🔥</h1>
+
+  <h1>🔥💣 HARDCORE-50/50-CHALLENGE 💣🔥</h1>
 
   <div class="game">
-    <h2>DayZ</h2>
-    <p>Jemanden töten auf einem Offi-Server mit Militärweste und A-Tier-Waffe.</p>
+    <div class="content">
+      <h2>DayZ</h2>
+      <p>Spieler auf Offi-Server mit Militärweste und A-Tier-Waffe besiegen<br>
+      <span class="extra">Extra schwer: 2 Spieler besiegen</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
   <div class="game">
-    <h2>Demonologist</h2>
-    <p>2x Exorzismus auf normaler Schwierigkeit + große Map schaffen.<br>
-    <span class="extra">Extra schwer: Hintereinander schaffen</span></p>
+    <div class="content">
+      <h2>Demonologist</h2>
+      <p>2x Exorzismus auf normaler Schwierigkeit, auf einer großen Map!<br>
+      <span class="extra">Extra schwer: Beide Exorzismen hintereinander schaffen</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
   <div class="game">
-    <h2>Stardew Valley</h2>
-    <p>1.000.000 bei einer Auszahlung.</p>
+    <div class="content">
+      <h2>Battlefield 1</h2>
+      <p>Als Team mindestens 80 Kills zusammen erreichen<br>
+      <span class="extra">Extra schwer: 80 Kills + nächste Runde gewinnen + jeder mindestens 15 Kills</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
   <div class="game">
-    <h2>GTA V</h2>
-    <p>Casino oder Doomsday Heist schaffen.<br>
-    <span class="extra">Extra schwer: Ohne Schnell-Neustart</span></p>
+    <div class="content">
+      <h2>GTA V</h2>
+      <p>Casino- oder Doomsday-Heist ohne Schnell-Neustart abschließen<br>
+      <span class="extra">Extra schwer: Nach 5 Toden alles von vorne!</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
   <div class="game">
-    <h2>ETS 2</h2>
-    <p>1.000 km Strecke fahren ohne Frachtschaden über 10%.<br>
-    <span class="extra">Extra schwer: Ohne irgendeinen Schaden</span></p>
+    <div class="content">
+      <h2>ETS 2</h2>
+      <p>1.000 km Strecke fahren, ohne Frachtschaden über 10 %<br>
+      <span class="extra">Extra schwer: Fahrt komplett ohne Schaden</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
   <div class="game">
-    <h2>Overwatch 2</h2>
-    <p>2 Ranked-Runden hintereinander gewinnen.</p>
+    <div class="content">
+      <h2>Overwatch 2</h2>
+      <p>Back-to-Back Wins holen (2 Spiele hintereinander gewinnen)<br>
+      <span class="extra">Extra schwer: Jeder muss mit C-Tier-Helden spielen – keine Main-Klasse erlaubt!</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
   <div class="game">
-    <h2>Schedule 1</h2>
-    <p>95-110k zwei Tage hintereinander – keine Cops töten, nicht erwischt werden.<br>
-    <span class="extra">Verbuggte NPCs zählen mit!</span></p>
+    <div class="content">
+      <h2>Schedule 1</h2>
+      <p>Mindestens 95k an zwei Tagen hintereinander erreichen, ohne Cops zu töten<br>
+      <span class="extra">Verbuggte NPCs zählen dazu!</span></p>
+    </div>
+    <input type="checkbox" class="checkbox">
   </div>
 
-  <div class="game">
-    <h2>Sea of Thieves</h2>
-    <p>50.000 Gold verdienen.</p>
+  <div class="rules">
+    <h3>REGELN:</h3>
+    <p>Jeder, der an der Challenge teilnimmt, muss sie durchziehen! <span class="highlight">(Sonst wäre es ja keine richtige Challenge!)</span><br>
+    Wer währenddessen aussteigt, muss eine Bestrafung live im Stream machen.</p>
+
+    <p class="highlight">Die Bestrafung ist: BEAN BOOZLED!</p>
+    <p>Eine schlechte Bean muss mindestens 5 Minuten lang gekaut werden – live im Stream sichtbar!</p>
+    <p>Wenn das ganze Team die Challenge bis <strong>Sonntag, 21 Uhr</strong> nicht geschafft hat, bekommt jeder Teilnehmer die Bean Boozled-Bestrafung.</p>
+  </div>
+
+  <div class="coin">
+    <h3>Ablauf & Münzwurf:</h3>
+    <ul>
+      <li>Keine feste Reihenfolge der Spiele – wenn ihr festhängt, einfach wechseln</li>
+      <li><strong>Vor jedem Game:</strong> Es wird eine Münze geworfen</li>
+      <li>Einer wählt "Kopf" oder "Zahl"</li>
+      <li><span class="highlight">Wird falsch geraten → EXTRA-SCHWERE Herausforderung gilt!</span></li>
+      <li><span class="highlight">Wird richtig geraten → Am Ende der Challenge erneut werfen</span></li>
+      <li>Wird dann falsch geraten → Challenge wiederholen</li>
+      <li>Das geht so lange, bis der Münzwurf richtig geraten wurde!</li>
+    </ul>
+    <p style="text-align:center; margin-top:1rem;">🎲 Viel Erfolg und vor allem: Viel Spaß bei der <strong>Hardcore-50/50-Challenge</strong>! 🎲</p>
   </div>
 
 </body>
